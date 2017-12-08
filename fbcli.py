@@ -16,8 +16,8 @@ pwd = raw_input('Enter your password: ')
 def authenticate(browser,url,email,pwd):
 	browser.open(url)
 	browser.select_form(nr = 0)       #This is login-password form -> nr = number = 0
-	browser.form['email'] = email #'rahuldravid313@gmail.com'
-	browser.form['pass'] = pwd #'Keerthi1107@!'
+	browser.form['email'] = email
+	browser.form['pass'] = pwd
 	response = browser.submit()
 	return BeautifulSoup(response,'html.parser')
 
