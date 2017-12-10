@@ -1,17 +1,22 @@
 from setuptools import setup
 
 setup(
-	name='fbcli',
+	name='utlyz',
 	version=1.0,
-	py_modules=['fbcli'],
+	py_modules=[
+		'fbcli',
+		'cricbuzz',
+	],
 	install_requires=[
 		'click',
 		'bs4',
 		'BeautifulSoup',
 		'mechanize',
 	],
-	entry_points='''
-		[console_scripts]
-		fbcli=fbcli:cli
-		''',
+	entry_points={
+		'console_scripts':[
+		'fbcli=fbcli:cli',
+		'cricbuzz=cricbuzz:cli',
+		]
+	},
 )
