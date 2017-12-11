@@ -30,7 +30,7 @@ def cli(lyr):
     	r=s.get(get_url(req)) #Session get similarl to requests.get()
     	soup=BeautifulSoup(r.content,'html.parser')
     	temp=str(soup.findAll(class_='row'))
-    	temp=temp.replace('//n','')
+    	temp=temp.replace('\\n','')
     	temp=temp.split('<br/>') #Modifications of source code to get our required outcome
     	print temp[2].split('\\r')[-1]
     	for i in temp:	#Loop is for modifying each string so that no junk appears except \n
