@@ -1,12 +1,11 @@
-    import requests
-    from bs4 import BeautifulSoup
-    import click
+import requests
+from bs4 import BeautifulSoup
+import click
 
+url='https://search.azlyrics.com/search.php?q='
+req=raw_input('Give me the name of the song: ')
 
-    url='https://search.azlyrics.com/search.php?q='
-    req=raw_input('Give me the name of the song: ')
-
-    def get_url(req):
+def get_url(req):
         '''
         This function is used to get the required url for the song
         '''
@@ -25,11 +24,11 @@
      #Modifications done to get it compatible with requests module
         return song_url
 
-    @click.command()
+@click.command()
 
-    @click.option('--lyr',is_flag=True,help='Gives you the lyrics of a song of your choice')
+@click.option('--lyr',is_flag=True,help='Gives you the lyrics of a song of your choice')
 
-    def cli(lyr):
+def cli(lyr):
     	if(lyr):
             s=requests.Session() #It is having so many redirects so use of session is helpful or we get an error
             s.headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36' #Headers
