@@ -4,6 +4,8 @@ If you want to check the score of all ongoing matches in cricket or want to chec
 Currently, Utlyz supports 2 things:
 1) Facebook Access
 2) Checking cricket scores and schedules (from Cricbuzz)
+3) Getting lyrics of songs
+4) Searching on google and wikipedia
 
 ## FacebookCLI
 Let's you to access your FB account from the command line and returns various things number of unread notifications,
@@ -20,6 +22,13 @@ The functionalities it currently supports are:
 	2) Cricket updates
 	--score			Gives the scores of all ongoing and recently finished matches
 	--schedule		Gives the schedule of all international matches throughout the ongoing month
+	
+	3) Lyrics
+	--lyr			Gives the lyrics of the song you enter after executing the command
+	
+	4) Searching
+	--google		Gives the links of the most popular sites visited w.r.t a particular topic
+	--wiki			Gives the whole wikipedia information regarding a topic on the Command Line itself
 	
 
 It's a project in it's budding stage currently and you're most welcome to create issues and PR's
