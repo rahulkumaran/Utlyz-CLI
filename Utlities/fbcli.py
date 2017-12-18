@@ -7,7 +7,6 @@ A command line application that allows you to perform tasks
 from the command line interface on Facebook. But only one
 option can be used at a time and all options being used together
 will not allow you to use the total functionality of this program.
-
 '''
 
 email = raw_input('Enter your Email ID: ')
@@ -23,7 +22,7 @@ def authenticate(browser,url,email,pwd):
 
 @click.command()
 
-@click.option('--fr',is_flag=True,help='Gives you the number of friend requests you have not seen yet') 
+@click.option('--fr',is_flag=True,help='Gives you the number of friend requests you have not seen yet')
 
 @click.option('--msg',is_flag=True,help='Gives you the number of unread messages')
 
@@ -46,7 +45,7 @@ def cli(fr,msg,notifs,bdays):
 		if(bdays):
 			url = 'http://www.facebook.com/events/birthdays/'
 			soup = authenticate(browser,url,email,pwd)	#Parses the html and stores in 'soup'
-			bday_box = soup.find('div',attrs={'class':'_4-u2 _tzh _fbBirthdays__todayCard _4-u8'})	#Finds the html with the div tags and given attributes 
+			bday_box = soup.find('div',attrs={'class':'_4-u2 _tzh _fbBirthdays__todayCard _4-u8'})	#Finds the html with the div tags and given attributes
 			bday_box_narrow = bday_box.find_all('a',attrs={'data-hovercard-prefer-more-content-show':'1'})		#Finds all a tags with the given attirbute. This will be the list of bdays
 			click.echo("%d people have their birthdays today :\n"%(len(bday_box_narrow)))
 			for a in bday_box_narrow:
