@@ -8,6 +8,7 @@ setup(
 		'cricbuzz',
 		'lyrics',
 		'searching',
+		'news',
 	],
 	install_requires=[
 		'click',
@@ -24,6 +25,7 @@ setup(
 		'cricbuzz=cricbuzz:cli',
 		'lyrics=lyrics:cli',
 		'searching=searching:cli',
+		'news=news:cli',
 		]
 	},
 )
