@@ -7,6 +7,7 @@ setup(
 		'fbcli',
 		'cricbuzz',
 		'lyrics',
+		'searching',
 	],
 	install_requires=[
 		'click',
@@ -14,12 +15,15 @@ setup(
 		'BeautifulSoup',
 		'mechanize',
 		'requests',
+		'google',
+		'wikipedia',
 	],
 	entry_points={
 		'console_scripts':[
 		'fbcli=fbcli:cli',
 		'cricbuzz=cricbuzz:cli',
 		'lyrics=lyrics:cli',
+		'searching=searching:cli',
 		]
 	},
 )
