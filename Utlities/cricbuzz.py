@@ -7,7 +7,6 @@ A command line application that allows you to perform tasks
 from the command line interface on Facebook. But only one
 option can be used at a time and all options being used together
 will not allow you to use the total functionality of this program.
-
 '''
 
 def find_soup(browser,url):
@@ -31,8 +30,8 @@ def cli(score,schedule):
 	if(score):		#Called after score option is called
 			soup = find_soup(browser,'http://www.cricbuzz.com/cricket-match/live-scores')	#Gets HTML of entire page
 			score_box = soup.find_all('div',attrs={'class':'cb-lv-scrs-col text-black'})	#Navigating to where the score is available in the page
-			score_box_narrow = soup.find_all('span',attrs={'class':'text-bold'})		#Narrowing down search to where the score is avaiable
-			score_box_num = []	
+			#score_box_narrow = soup.find_all('span',attrs={'class':'text-bold'})		#Narrowing down search to where the score is avaiable
+			score_box_num = []
 			click.echo("\nThe scores of all matches being played currently is displayed below:\n")
 			num=1
 			for i in score_box:		#To get the score of all live matches and recently done matches
