@@ -14,7 +14,7 @@ Before jumping into the steps, please clone and download the Utlyz-CLI repositor
 
 There are 2 ways to run this program!
 ## 1st PROCEDURE (EASY METHOD)
-Run the command below directly on the command line:
+Run the command below in the  "Utlities" directory (which will be inside the downloaded repository folder) directly on the command line:
 
     . prep.sh
     
