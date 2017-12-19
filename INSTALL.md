@@ -1,12 +1,28 @@
 # Utlyz
-Let's you to access your FB account and check cricket updates from the command line and returns various things number of unread notifications, messages or friend requests you have or scores and schedules of cricket matches.
+Let's you to access the following things
+                    
+                    (1) Your FB account
+                    (2) Check cricket updates from the command line
+                    (3) Search on Google and Wiki from the Command line
+                    (4) Get lyrics of various songs from the command line
+                    (5) Gives you the news bulletin as well
 
 This program best runs on Ubuntu (Tested and executed)
 To run this program follow the given steps:
 
-Before jumping into the steps, please clone and download the FacebookCLI repository
+Before jumping into the steps, please clone and download the Utlyz-CLI repository
 
-(1) Download virtualenv in the same folder as that of the FacebookCLI repository programs.(if you already have this then skip this and go to the next step)
+There are 2 ways to run this program!
+## 1st PROCEDURE (EASY METHOD)
+Run the command below directly on the command line:
+
+    . prep.sh
+    
+And your virtualenv will be setup and ready to use!
+
+## 2nd PROCEDURE (EASY BUT LONG AND SLIGHTLY CONFUSING)
+
+(1) Download virtualenv in the same folder as that of the Utlyz-CLI repository programs.(if you already have this then skip this and go to the next step)
 
     sudo apt install virtualenv
     
@@ -24,18 +40,10 @@ Before jumping into the steps, please clone and download the FacebookCLI reposit
     pip install --editable .
     
     
-(5) Finally type the below command to make sure that you get a list of the functionalities available in the following program
+(5) Finally type the below commands one by one to make sure that you get a list of the functionalities available in the following program
 
     fbcli --help
     cricbuzz --help
-    
- To check the number of notifications you have type the following command and you'll be prompted to enter Email ID and Password :
- 
-    fbcli --notifs
-    Enter Email ID: <email_id>
-    Enter Password: <password>
-    
- To check the score of all ongoing matches, you'll have to type the following command:
- 
-    cricbuzz --score
-    
+    lyrics --help
+    searching --help
+    news --help
