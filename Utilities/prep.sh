@@ -9,10 +9,6 @@ else
 	echo "Since you don't have Virtualenv installed we'll install it for you!"
 	echo "Please wait for a few moments! :)"
 	echo "INSTALLING......."
-	for i in {1..3}
-	do
-		echo ""
-	done
 	sudo apt-get install virtualenv		#install virtualenv
 	virtualenv venv		#creates your virtualenv by the name venv
 	chmod 777 prep.sh	#Gives reading, writing and execution power to all users on system
