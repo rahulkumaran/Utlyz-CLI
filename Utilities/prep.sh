@@ -6,7 +6,8 @@ then
 	. venv/bin/activate	#helps you enter into virtual environment
 	pip install --editable .
 else
-	echo "Since you don't have Virtualenv installed we'll install it for you!"
+	echo "Since you don't have Virtualenv installed already, we'll install it for you!"
+	echo "After installing, we'll also be setting it up for you!"
 	echo "Please wait for a few moments! :)"
 	echo "INSTALLING......."
 	sudo apt-get install virtualenv		#install virtualenv
