@@ -9,6 +9,7 @@ setup(
 		'lyrics',
 		'searching',
 		'news',
+		'football',
 	],
 	install_requires=[
 		'click',
@@ -26,6 +27,7 @@ setup(
 		'lyrics=lyrics:cli',
 		'searching=searching:cli',
 		'news=news:cli',
+		'football=football:cli',
 		]
 	},
 )
