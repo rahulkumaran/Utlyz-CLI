@@ -21,7 +21,7 @@ def find_soup(browser,url):
 
 def cli(score,schedule):
 	browser = mechanize.Browser()
-	browser.set_handle_robots(False)	#Allows everything to be written
+	browser.set_handle_robots(False)	#Allows everything to be written only
 	cookies = mechanize.CookieJar()
 	browser.set_cookiejar(cookies)
 	browser.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.41 Safari/534.7')]
