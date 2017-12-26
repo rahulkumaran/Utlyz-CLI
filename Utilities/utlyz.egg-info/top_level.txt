@@ -1,0 +1,6 @@
+cricbuzz
+fbcli
+football
+lyrics
+news
+searching

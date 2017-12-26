@@ -1,0 +1,7 @@
+click
+bs4
+BeautifulSoup
+mechanize
+requests
+google
+wikipedia

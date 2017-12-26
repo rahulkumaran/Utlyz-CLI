@@ -1,0 +1,8 @@
+[console_scripts]
+cricbuzz = cricbuzz:cli
+fbcli = fbcli:cli
+football = football:cli
+lyrics = lyrics:cli
+news = news:cli
+searching = searching:cli
+
