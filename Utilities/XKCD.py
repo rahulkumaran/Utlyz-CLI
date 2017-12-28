@@ -1,4 +1,3 @@
-import re
 import requests
 from bs4 import BeautifulSoup
 import random
@@ -18,7 +17,7 @@ for i in range(choice):
 for i in l:
     url="https://xkcd.com/"+str(i)+"/"
     r=requests.get(url)
-    soup=BeautifulSoup(r.content,'html.parser')  
+    soup=BeautifulSoup(r.content,'html.parser')
     filename=str(soup.select('#ctitle')).split('">')
     filename=filename[1].split('<')
     filename=filename[0] #Getting filename using string manip
