@@ -20,7 +20,6 @@ setup(
 		'requests',
 		'google',
 		'wikipedia',
-		'os',
 	],
 	entry_points={
 		'console_scripts':[
