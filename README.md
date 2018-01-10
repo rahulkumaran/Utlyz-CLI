@@ -1,7 +1,12 @@
 # Utlyz
+
 Utlyz is a an application that works on the command line and makes life easier for you.
-If you want to check the score of all ongoing matches in cricket or want to check if you got any new friend requests or notifications on FB, Utlyz is the right application for you! Follow the steps on INSTALL.md to install this and run it on your laptop or dekstop.
-Currently, Utlyz supports 7 things:
+If you want to check the score of all ongoing matches in cricket or want to check if you got any new friend requests or notifications on FB, Utlyz is the right application for you! Follow the steps on [`INSTALL.md`](./INSTALL.md) to install this and run it on your laptop or dekstop.
+
+![image](https://i.imgur.com/pzkodnT.png)
+
+
+Currently, Utlyz supports 8 things:
 1) Facebook Access
 2) Checking cricket scores and schedules (from Cricbuzz)
 3) Getting lyrics of songs
@@ -9,31 +14,40 @@ Currently, Utlyz supports 7 things:
 5) Checking news bulletins (from reuters)
 6) Checking football scores (from Goal.com)
 7) Allows you to have access to random XKCD images in a separate XKCD directory.
+8) Doing basic calculations.
+---
 
-## FacebookCLI
-Let's you to access your FB account from the command line and returns various things number of unread notifications,
-messages or friend requests you have.
+- ## FacebookCLI
+  Let's you to access your FB account from the command line and returns various things number of *unread notifications*,
+*messages* or *friend requests* you have.
 
-## Cricket Updates
-Let's you to check score updates and cricket schedules of the current month from your command line itself.
+- ## Cricket Updates
+  Let's you to check score updates and cricket schedules of the current month from your command line itself.
 
-## Lyrics
-Let's you get the lyrics of whatever song you want. All you need to do is, enter the name of the song after typing in the comannd, and BOOM! You have your song's lyrics in front of you on the command line.
+- ## Lyrics
+  Let's you get the lyrics of *whatever* song you want. All you need to do is, enter the name of the song after typing in the comannd, and **💥BOOM!💥** You have your song's lyrics in front of you on the command line.
 
-## Searching
-Let's you to access google and wikipedia from the command line itself! All you need to do is type the --google or --wiki options to do a google search or a wiki search. After typing the commands, you'll be prompted to enter the topic you want to search about.
+- ## Searching
+  Let's you to access google and wikipedia from the command line itself! All you need to do is type the --google or --wiki options to do a google search or a wiki search. After typing the commands, you'll be prompted to enter the topic you want to search about.
 If you do a Google search, it'll display the most popular links related to that particular topic. Just clicking on the link will redirect you to the browser.
+  >Note : In case of a wiki search, the entire *wikipedia* data is displayed on the command line apart from tables and images.
 
-## News
-Let's you get the access to the latest news bulletins from reuters directly on your command line.
+- ## News
+  Let's you get the access to the latest news bulletins from reuters directly on your command line.
 
-## Football
-Let's you get scores of the ongoing matches and matches that just got over on that particular day.
+- ## Football
+  Let's you get scores of the ongoing matches and matches that just got over on that particular day.
 
-## XKCD
-Downloads random XKCD images for you to read in the directory XKCD inside the Utlities folder in your local repository(Laptop or Desktop).
+- ## XKCD
+  Downloads random *XKCD* images for you to read in the directory *XKCD* inside the Utlities folder in your local repository(Laptop or Desktop).
 
-In case of a wiki search, the entire wikipedia data is displayed on the command line apart from tables and images. <br><br>
+- ## Calculator
+  Let's you add, subtract, multiply, divide or find the modulus of two numbers.
+  
+---
+
+
+
 The functionalities it currently supports are:
 	
 	1) Facebook updates
@@ -61,10 +75,15 @@ The functionalities it currently supports are:
 	
 	7) XKCD
 	--image			Allows you to download XKCD images
-	
+    
+    8) Calculator
+    --add			Allows you to add two numbers
+	--sub			Allows you to subtract two numbers
+    --mul			Allows you to multiply two numbers
+    --div			Allows you to divide two numbers
+    --mod			Allows you to find modulus of two numbers
 
-It's a project in it's budding stage currently and you're most welcome to create issues and PR's
 
-Your comments would be valuable! Please Fork and clone the repository and run it in your virtual environment
-
-## WORKS BEST WITH UBUNTU
+> It's a project in it's *budding stage* currently and you're most welcome to create issues and PR's. Your comments would be *valuable*! Please *fork* and *clone* the repository and run it in your virtual environment.
+>
+> Note : Utylz works best with **Ubuntu**
