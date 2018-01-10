@@ -19,6 +19,6 @@ def cli(add,sub,mul, div, mod):
     		print a*b
     	elif(div): #for division
     		print a/b
-    	elif(mod): #for moulus
+    	elif(mod): #for modulus
     		print a%b
 
