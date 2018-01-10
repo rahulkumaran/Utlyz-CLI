@@ -12,4 +12,6 @@ def cli(trending):
                 soup=BeautifulSoup(r.content,'html.parser') #Getting content
                 links=soup.find_all(href=re.compile('/article/')) #getting every link which has the word article
                 for i in links:
-                        print "->"+i.text #printing out text of the blockquote
+                    if(i.text != 'Continue Reading'):
+                        if(i.text != ""):
+                            print("->" + i.text) #printing out text of the blockquote
