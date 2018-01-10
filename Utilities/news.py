@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import re # Importing regular expression module
 import click
 
-click.command()
-click.option("--trending",is_flag=True,help='Gives the trending news topics!')
+@click.command()
+@click.option("--trending",is_flag=True,help='Gives the trending news topics!')
 def cli(trending):
         if(trending):
                 url='https://in.reuters.com/news/top-news'
