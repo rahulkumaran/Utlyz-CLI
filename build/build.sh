@@ -4,7 +4,7 @@ then
 	echo "ACTIVATING........"
 	chmod 777 prep.sh	#Gives reading, writing and execution power to all users on system
 	. venv/bin/activate	#helps you enter into virtual environment
-	pip install --editable .
+	pip install --editable apps/
 else
 	echo "Since you don't have Virtualenv installed already, we'll install it for you!"
 	echo "After installing, we'll also be setting it up for you!"
@@ -14,5 +14,5 @@ else
 	virtualenv venv		#creates your virtualenv by the name venv
 	chmod 777 prep.sh	#Gives reading, writing and execution power to all users on system
 	. venv/bin/activate	#helps you enter into virtual environment
-	pip install --editable .
+	pip install --editable apps/
 fi
