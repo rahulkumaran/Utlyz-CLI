@@ -11,7 +11,9 @@ def find_soup(browser,url):
 
 @click.option('--scores',is_flag=True,help="Gives you the scores of the matches!")
 
-def cli(scores):
+@click.option('--transfers',is_flag=True,help="Gives latest rumours about transfers")
+
+def cli(scores, transfers):
 	browser = mechanize.Browser()
 	browser.set_handle_robots(False)	#Allows everything to be written
 	cookies = mechanize.CookieJar()
@@ -27,3 +29,11 @@ def cli(scores):
 			print i.text
 			click.echo("--------------------------------------------------------------------")
 		click.echo("\n\nNOTE: ALL THE MATCH TIMINGS ARE IN GMT\n\n")
+	if(transfers):
+		soup = find_soup(browser,'http://www.goal.com/en-us/transfer-rumours/1')	#Gets HTML of entire page
+		rumours = soup.select(".transfer-card__desc p")
+	click.echo("\nThe latest Transfer news & rumours are displayed below:")
+	click.echo("--------------------------------------------------------------------")
+	for i in rumours:
+		print("->"+i.text)
+		click.echo("--------------------------------------------------------------------")
