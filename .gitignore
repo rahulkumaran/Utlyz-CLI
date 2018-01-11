@@ -1,6 +1,5 @@
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -15,6 +14,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.pyc
 MANIFEST
 
 # Installer logs
