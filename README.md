@@ -18,30 +18,52 @@ Currently, Utlyz supports 8 things:
 ---
 
 - ## FacebookCLI
+
+  ![image](./img/fbcli.PNG)
+
   Let's you to access your FB account from the command line and returns various things number of *unread notifications*,
 *messages* or *friend requests* you have.
 
 - ## Cricket Updates
+
+  ![image](./img/cricbuzz.PNG)
+
   Let's you to check score updates and cricket schedules of the current month from your command line itself.
 
 - ## Lyrics
+
+  ![image](./img/lyr.PNG)
+
   Let's you get the lyrics of *whatever* song you want. All you need to do is, enter the name of the song after typing in the comannd, and **💥BOOM!💥** You have your song's lyrics in front of you on the command line.
 
 - ## Searching
+
   Let's you to access google and wikipedia from the command line itself! All you need to do is type the --google or --wiki options to do a google search or a wiki search. After typing the commands, you'll be prompted to enter the topic you want to search about.
 If you do a Google search, it'll display the most popular links related to that particular topic. Just clicking on the link will redirect you to the browser.
   >Note : In case of a wiki search, the entire *wikipedia* data is displayed on the command line apart from tables and images.
 
 - ## News
+
+  ![image](./img/news.PNG)
+
   Let's you get the access to the latest news bulletins from reuters directly on your command line.
 
 - ## Football
+
+  ![image](./img/football.PNG)
+
   Let's you get scores of the ongoing matches and matches that just got over on that particular day.
 
 - ## XKCD
+
+  ![image](./img/xkcd.PNG)
+
   Downloads random *XKCD* images for you to read in the directory *XKCD* inside the Utlities folder in your local repository(Laptop or Desktop).
 
 - ## Calculator
+
+  ![image](./img/calc.PNG)
+
   Let's you add, subtract, multiply, divide or find the modulus of two numbers.
   
 ---
