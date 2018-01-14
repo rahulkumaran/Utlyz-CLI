@@ -2,10 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import re # Importing regular expression module
 import click
+from gtts import gTTS
+import os
 
 @click.command()
 @click.option("--trending",is_flag=True,help='Gives the trending news topics!')
-def cli(trending):
+@click.option("--read",is_flag=True,help='Reads you out trending news topics!')
+
+def cli(trending, read):
         if(trending):
                 url='https://in.reuters.com/news/top-news'
                 r=requests.get(url) # The very old get function
@@ -15,3 +19,17 @@ def cli(trending):
                     if(i.text != 'Continue Reading'):
                         if(i.text != ""):
                             print("->" + i.text) #printing out text of the blockquote
+        if(read):
+                url='https://in.reuters.com/news/top-news'
+                r=requests.get(url) # The very old get function
+                soup=BeautifulSoup(r.content,'html.parser') #Getting content
+                links=soup.find_all(href=re.compile('/article/')) #getting every link which has the word article
+                j=0
+                for i in links:
+                    if(i.text != 'Continue Reading'):
+                        if(i.text != ""):
+                            news = gTTS(text=i.text, lang='en')
+                            news.save("news" + str(j) + ".mp3")
+                            os.system("mpg321 news" + str(j) + ".mp3")
+                            os.remove("news" + str(j) + ".mp3")
+                            j+=1
