@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import re # Importing regular expression module
-import click
+import click, requests
 from gtts import gTTS
 import os
 
