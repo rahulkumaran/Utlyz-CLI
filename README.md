@@ -1,7 +1,7 @@
 # Utlyz
 
 Utlyz is a an application that works on the command line and makes life easier for you.
-If you want to check the score of all ongoing matches in cricket or want to check if you got any new friend requests or notifications on FB, Utlyz is the right application for you! Follow the steps on [`INSTALL.md`](./INSTALL.md) to install this and run it on your laptop or dekstop.
+If you want to check the score of all ongoing matches in cricket or want to check if you got any new friend requests or notifications on FB, Utlyz is the right application for you! Follow the steps on [`INSTALL.md`](https://github.com/rahulkumaran/Utlyz-CLI/blob/master/docs/INSTALL.md) to install this and run it on your laptop or dekstop.
 
 ![image](https://i.imgur.com/pzkodnT.png)
 
