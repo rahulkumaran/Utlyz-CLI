@@ -6,6 +6,9 @@ Let's you to access the following things
                     (3) Search on Google and Wiki from the Command line
                     (4) Get lyrics of various songs from the command line
                     (5) Gives you the news bulletin as well
+                    (6) Get scores of ongoing and recent matches
+                    (7) Download random XKCD images for your local repo
+                    (8) Perform addition, subtraction, multiplication, division, and modulus division
 
 This program best runs on Ubuntu (Tested and executed)
 To run this program follow the given steps:
@@ -47,3 +50,6 @@ And your virtualenv will be setup and ready to use!
     lyrics --help
     searching --help
     news --help
+    football --help
+    xkcd --help
+    calc --help
