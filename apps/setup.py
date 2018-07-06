@@ -10,8 +10,7 @@ setup(
 		'searching',
 		'news',
 		'football',
-		'xkcd',
-		'calc'
+		'xkcd'
 	],
 	install_requires=[
 		'click',
@@ -30,8 +29,7 @@ setup(
 		'searching=searching:cli',
 		'news=news:cli',
 		'football=football:cli',
-		'xkcd=xkcd:cli',
-		'calc=calc:cli'
+		'xkcd=xkcd:cli'
 		]
 	},
 )
