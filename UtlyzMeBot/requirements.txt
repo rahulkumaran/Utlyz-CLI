@@ -1,0 +1,6 @@
+python-telegram-bot==9.0.0
+requests==2.18.4
+telepot==12.5
+wikipedia==1.4.0
+beautifulsoup4==4.6.0
+mechanize==0.3.6
