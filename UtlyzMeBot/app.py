@@ -168,7 +168,7 @@ def help(bot, update):
 
 
 if __name__=='__main__':
-	TOKEN = '482353144:AAHEfKVF_ibk2gAMI3T7sSk37u2ZU8P3PKQ'
+	TOKEN = '<ADD_BOT_TOKEN_HERE>'
 	PORT = int(os.environ.get('PORT', '8443'))
 
 
