@@ -3,6 +3,8 @@ import mechanize
 from getpass import getpass
 import click
 
+
+
 '''
 A command line application that allows you to perform tasks
 from the command line interface on Facebook. But only one
@@ -10,8 +12,6 @@ option can be used at a time and all options being used together
 will not allow you to use the total functionality of this program.
 '''
 
-email = raw_input('Enter your Email ID: ')
-pwd = getpass('Enter your password: ')
 
 def authenticate(browser,url,email,pwd):
 	browser.open(url)
@@ -33,6 +33,10 @@ def authenticate(browser,url,email,pwd):
 
 
 def cli(fr,msg,notifs,bdays):
+	#Ask's for ID and Password only if any flag is called
+	email = raw_input('Enter your Email ID: ')
+	pwd = getpass('Enter your password: ')
+
 	browser = mechanize.Browser()
 	browser.set_handle_robots(False)	#Allows everything to be written
 	cookies = mechanize.CookieJar()
@@ -51,9 +55,18 @@ def cli(fr,msg,notifs,bdays):
 			click.echo("%d people have their birthdays today :\n"%(len(bday_box_narrow)))
 			for a in bday_box_narrow:
 				print str(i)+')',a.text		#prints names of people who have their birthdays today
-				bday_people_names += [a.text]		#stores names of people who have their birthdays today
-				bday_people_links += [a.get('href')]		#stores links of profiles of people have their bdays today
+				bday_people_names += [a.text]		#stores names of people who have their birthdays today				
+				bday_people_links += [a.get('href').replace("//www","//mbasic")]		#stores links of profiles of people have their bdays today
 				i+=1
+			wish = int(raw_input("---Menu---\n1)Wish Everyone\n2)Exit\n"))
+			if wish == 1:
+				for name,link in zip(bday_people_names,bday_people_links):
+					browser.open(link)
+					browser.select_form(nr=1)
+					browser.form['xc_message']="Hey {}! Wish you a Very Happy Birthday!".format(name.split(' ')[0])
+					browser.submit(name='view_post')
+
+
 		else:
 			url = 'http://www.facebook.com/login.php'
 			soup = authenticate(browser,url,email,pwd)	#Parses the html and stores in 'soup'
