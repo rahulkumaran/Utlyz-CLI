@@ -63,8 +63,9 @@ def cli(fr,msg,notifs,bdays):
 				for name,link in zip(bday_people_names,bday_people_links):
 					browser.open(link)
 					browser.select_form(nr=1)
-					browser.form['xc_message']="Hey {}! Wish you a Very Happy Birthday!".format(name.split(' ')[0])
+					browser.form['xc_message']="Hey {}! Wish you a Very Happy Birthday! :)".format(name.split(' ')[0])
 					browser.submit(name='view_post')
+					print("Wished {}!".format(name))
 
 
 		else:
