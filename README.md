@@ -9,7 +9,6 @@ If you want to check the score of all ongoing matches in cricket or want to chec
 
 
 Currently, Utlyz supports 8 things:
-
 1) Facebook Access
 2) Checking cricket scores and schedules (from Cricbuzz)
 3) Getting lyrics of songs
