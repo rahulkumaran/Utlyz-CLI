@@ -44,4 +44,8 @@ After you find the bot, click on it and then click on the `Start` button to star
 ## Contributing Guidlines
 This is a project which is currently in its budding stage and contributions and suggestions are most welcome from all those who are interested in this project. Check the contributing guidelines [here](https://github.com/rahulkumaran/UtlyzMeBot/docs/CONTRIBUTING.md)
 
+## How To Test This Bot?
+You can clone the repository. Come into the UtlyzMeBot directory, and run the command ```python3 app.py```.<br/>
+Before that make sure to actually go on to Telegram. Go to Bot Father, and get your own bot token created and paste that in app.py in the required place.
+
 ### The project has been deployed to a server and is up and running. Anyone interested to use it can use it. Testers are most welcome to test it and let us know if any bugs are there in the bot. You can raise it as an issue if you find any bugs.
