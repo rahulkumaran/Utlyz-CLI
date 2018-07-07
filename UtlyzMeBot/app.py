@@ -1,7 +1,6 @@
 from telegram.ext import CommandHandler, Updater
 from telegram import *
 import requests
-import telepot
 import re
 import wikipedia
 from bs4 import BeautifulSoup
