@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import mechanize
+from getpass import getpass
 import click
 
 '''
@@ -10,7 +11,7 @@ will not allow you to use the total functionality of this program.
 '''
 
 email = raw_input('Enter your Email ID: ')
-pwd = raw_input('Enter your password: ')
+pwd = getpass('Enter your password: ')
 
 def authenticate(browser,url,email,pwd):
 	browser.open(url)
