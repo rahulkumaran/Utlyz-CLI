@@ -40,7 +40,7 @@ And your virtualenv will be setup and ready to use!
     
 (4) Then type the command below, in order to make sure that the changes you do in your file are directly reflected in your virtual environment.
 
-    pip install --editable .
+    pip install --editable apps/
     
     
 (5) Finally type the below commands one by one to make sure that you get a list of the functionalities available in the following program
